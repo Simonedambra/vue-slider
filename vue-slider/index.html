@@ -16,7 +16,8 @@
         <div class="container">
             <div class="items">
 
-                <div class="item active" v-for="(imeg, index) in Images" v-show="count===index">
+                <div class="item active" @mouseover="upHere = true" @mouseleave="upHere = false"
+                    v-for="(imeg, index) in Images" v-show="count===index">
                     <img :src="imeg" alt="">
                 </div>
 

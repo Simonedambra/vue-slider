@@ -90,6 +90,7 @@ const optionObj = {
     data() {
 
         return {
+            upHere: false,
             count: 0,
             Images: ['./img/01.webp', './img/02.webp', './img/03.webp', './img/04.webp', './img/05.webp',]
         }
@@ -110,6 +111,18 @@ const optionObj = {
         }
 
     },
+    created() {
+
+        setInterval(() => {
+            if (this.upHere === false) {
+                if (this.count < this.Images.length - 1) { this.count++ }
+                else (this.count = 0)
+            }
+            else {
+
+            }
+        }, 1000);
+    }
 }
 const app = createApp(optionObj)
 app.mount('#app')
