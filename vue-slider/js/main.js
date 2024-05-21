@@ -121,7 +121,7 @@ const optionObj = {
             else {
 
             }
-        }, 1000);
+        }, 3000);
     }
 }
 const app = createApp(optionObj)

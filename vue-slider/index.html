@@ -21,8 +21,8 @@
                     <img :src="imeg" alt="">
                 </div>
 
-                <div @click="remove()" class="prev"></div>
-                <div @click="add()" class="next"></div>
+                <div @click="remove()" @mouseover="upHere = true" class="prev"></div>
+                <div @click="add()" @mouseover="upHere = true" class="next"></div>
 
             </div>
         </div>

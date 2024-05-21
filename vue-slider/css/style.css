@@ -43,15 +43,21 @@
     background: #ccc;
     position: absolute;
     left: 50%;
-    bottom: -15px;
+
     transform: translate(-50%);
     cursor: pointer;
     z-index: 999;
 }
 
+.prev {
+    position: absolute;
+    top: 0;
+
+}
+
 .next {
     position: absolute;
-    top: 20px;
+    bottom: 0;
 
 }
 
